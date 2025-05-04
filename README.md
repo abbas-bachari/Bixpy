@@ -2,8 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/bixpy)](https://pypi.python.org/pypi/bixpy)
 [![Python version](https://img.shields.io/pypi/pyversions/bixpy)](https://www.python.org/downloads/)
-[![Documentation](https://img.shields.io/badge/docs-latest-blue)](https://bixpy.readthedocs.io/en/stable/)
-[![Code Style](https://img.shields.io/badge/code_style-black-black)](https://black.readthedocs.io/en/stable/)
+[![Documentation](https://img.shields.io/badge/docs-latest-blue)](https://github.com/abbas-bachari/bixpy)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This is a lightweight library that works as a connector to [BingX public API](https://Bingx-api.github.io/docs/)
@@ -204,7 +203,7 @@ def on_message(ws, data: dict) -> None:
     """
     Event handler for SpotWebsocket messages
     """
-    print(data['data'])
+    print(data)
 
 ws=SpotMarketWebsocket( on_message=on_message,proxies=proxies )
 ws.kline("BTC-USDT","1min")
