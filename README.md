@@ -1,6 +1,6 @@
 <h1 align="center">BingX API Connector Python (Bixpy)</h1>
 <p align="center">
-<a href="https://github.com/abbas-bachari/Bixpy"><img src="https://img.shields.io/badge/Bixpy%20-Version%201.0.1-green?style=plastic&logo=codemagic" alt="Bixpy"></a>
+<a href="https://github.com/abbas-bachari/Bixpy"><img src="https://img.shields.io/badge/Bixpy%20-Version%201.0.2-green?style=plastic&logo=codemagic" alt="Bixpy"></a>
 <a href="https://github.com/abbas-bachari/Bixpy"><img src="https://img.shields.io/badge/Python%20-3.7+-green?style=plastic&logo=Python" alt="Python"></a>
   <a href="https://pypi.org/project/Bixpy/"><img src="https://img.shields.io/pypi/v/Bixpy?style=plastic" alt="PyPI - Version"></a>
   <a href="https://pypi.org/project/Bixpy/"><img src="https://img.shields.io/pypi/l/Bixpy?style=plastic" alt="License"></a>

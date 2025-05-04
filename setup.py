@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='Bixpy',
-    version='1.0.1',
+    version='1.0.2',
     author='Abbas Bachari',
     author_email='abbas-bachari@hotmail.com',
     description="This is a lightweight library that works as a connector to BingX public API.",
@@ -29,7 +29,7 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
-        "Programming Language :: Python :: 3.xx",
+        "Programming Language :: Python :: 3",
         
         
     ],
