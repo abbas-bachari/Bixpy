@@ -1,3 +1,40 @@
+Metadata-Version: 2.4
+Name: Bixpy
+Version: 1.0.1
+Summary: This is a lightweight library that works as a connector to BingX public API.
+Home-page: https://github.com/abbas-bachari/Bixpy
+Author: Abbas Bachari
+Author-email: abbas-bachari@hotmail.com
+License: MIT
+Project-URL: Homepage, https://github.com/abbas-bachari/Bixpy
+Project-URL: Documentation, https://github.com/abbas-bachari/Bixpy
+Project-URL: Source, https://github.com/abbas-bachari/Bixpy/
+Project-URL: Tracker, https://github.com/abbas-bachari/Bixpy/issues
+Keywords: Bingx,Bingx-sdk,Bingx-python,Bixpy,Bingx-api
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.xx
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: websocket-client
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
 <h1 align="center">BingX API Connector Python (Bixpy)</h1>
 <p align="center">
 <a href="https://github.com/abbas-bachari/Bixpy"><img src="https://img.shields.io/badge/Bixpy%20-Version%201.0.1-green?style=plastic&logo=codemagic" alt="Bixpy"></a>
