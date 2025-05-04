@@ -1,16 +1,18 @@
-# BingX API Connector Python (bixpy)
+# BingX API Connector Python (Bixpy)
 
-[![PyPI version](https://img.shields.io/pypi/v/bixpy)](https://pypi.python.org/pypi/bixpy)
-[![Python version](https://img.shields.io/pypi/pyversions/bixpy)](https://www.python.org/downloads/)
-[![Documentation](https://img.shields.io/badge/docs-latest-blue)](https://github.com/abbas-bachari/bixpy)
+[![PyPI version](https://img.shields.io/pypi/v/Bixpy)](https://pypi.python.org/pypi/Bixpy)
+[![Python version](https://img.shields.io/pypi/pyversions/Bixpy)](https://www.python.org/downloads/)
+[![Documentation](https://img.shields.io/badge/docs-latest-blue)](https://github.com/abbas-bachari/Bixpy)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 
 This is a lightweight library that works as a connector to [BingX public API](https://Bingx-api.github.io/docs/)
 
 ## Installation
 
 ```bash
-pip install bixpy
+pip install Bixpy
 ```
 
 ## Supported functionality
@@ -61,7 +63,7 @@ secret_key="YOUR API SECRET"
 
 
 # ACCOUNT AND WALLET  
-from bixpy  import Account
+from Bixpy  import Account
 
 account=Account(api_key=api_key,api_secret= secret_key, proxies=proxies)
 get_listen_key=account.generate_listen_Key()
@@ -72,10 +74,10 @@ listen_key=get_listen_key["listenKey"]
 
 
 #  SPOT
-from bixpy  import Spot
-from bixpy  import SpotAcccountWebsocket
-from bixpy  import SpotMarketWebsocket
-from bixpy  import SpotOrder
+from Bixpy  import Spot
+from Bixpy  import SpotAcccountWebsocket
+from Bixpy  import SpotMarketWebsocket
+from Bixpy  import SpotOrder
 
 spot=Spot(api_key=api_key,api_secret= secret_key, proxies=proxies)
 ws_spot_account=SpotAcccountWebsocket(listen_key=listen_key, on_message=on_message, proxies=proxies)
@@ -84,10 +86,10 @@ ws_spot_market=SpotMarketWebsocket( on_message=on_message, proxies=proxies)
 
 
 # PERPETUAL FUTURES
-from bixpy  import Perpetual
-from bixpy import PerpetualMarketWebsocket
-from bixpy import PerpetualAccountWebsocket
-from bixpy import PerpetualOrder,PerpetualOrderReplace
+from Bixpy  import Perpetual
+from Bixpy import PerpetualMarketWebsocket
+from Bixpy import PerpetualAccountWebsocket
+from Bixpy import PerpetualOrder,PerpetualOrderReplace
 
 perpetual=Perpetual(api_key=api_key,api_secret= secret_key, proxies=proxies)
 
@@ -98,14 +100,14 @@ ws_perpetual_account=PerpetualAccountWebsocket(listen_key=listen_key, on_message
 
 
 # STANDARD FUTURES
-from bixpy import Standard
+from Bixpy import Standard
 
 standard=Standard(api_key=api_key,api_secret= secret_key, proxies=proxies)
 
 
 
 # COPY TRADING
-from bixpy import CopyTrading
+from Bixpy import CopyTrading
 
 copy_trading=CopyTrading(api_key=api_key,api_secret= secret_key, proxies=proxies)
 ```
@@ -115,7 +117,7 @@ copy_trading=CopyTrading(api_key=api_key,api_secret= secret_key, proxies=proxies
 Usage examples:
 
 ```python
-from bixpy  import Spot,SpotOrder
+from Bixpy  import Spot,SpotOrder
 
 spot=Spot()
 # Get server timestamp
@@ -138,7 +140,7 @@ print(spot.new_order(order))
 Proxy is supported.
 
 ```python
-from bixpy import Spot
+from Bixpy import Spot
 
 proxies ={ 'https': 'http://127.0.0.1:10809' }
 
@@ -148,7 +150,7 @@ client= Spot(proxies=proxies)
 ### Account & Wallet
 
 ```python
-from bixpy  import Account
+from Bixpy  import Account
 
 
 proxies ={ 'https': 'http://127.0.0.1:10809' }
@@ -194,7 +196,7 @@ RAY            0                             0
 ### Websocket
 
 ```python
-from bixpy  import SpotMarketWebsocket
+from Bixpy  import SpotMarketWebsocket
 from time import sleep
 
 proxies ={ 'https': 'http://127.0.0.1:10809' }
