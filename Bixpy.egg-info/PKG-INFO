@@ -1,3 +1,40 @@
+Metadata-Version: 2.4
+Name: Bixpy
+Version: 1.0.2
+Summary: This is a lightweight library that works as a connector to BingX public API.
+Home-page: https://github.com/abbas-bachari/Bixpy
+Author: Abbas Bachari
+Author-email: abbas-bachari@hotmail.com
+License: MIT
+Project-URL: Homepage, https://github.com/abbas-bachari/Bixpy
+Project-URL: Documentation, https://github.com/abbas-bachari/Bixpy
+Project-URL: Source, https://github.com/abbas-bachari/Bixpy/
+Project-URL: Tracker, https://github.com/abbas-bachari/Bixpy/issues
+Keywords: Bingx,Bingx-sdk,Bingx-python,Bixpy,Bingx-api
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: websocket-client
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
 <h1 align="center">BingX API Connector Python (Bixpy)</h1>
 <p align="center">
 <a href="https://github.com/abbas-bachari/Bixpy"><img src="https://img.shields.io/badge/Bixpy%20-Version%201.0.2-green?style=plastic&logo=codemagic" alt="Bixpy"></a>
@@ -125,9 +162,9 @@ spot=Spot()
 # Get server timestamp
 print(spot.server_time())
 # Get klines of BTCUSDT at 1m interval
-print(spot.klines("BTC-USDT", "1m"))
+print(spot.kline("BTC-USDT", "1m"))
 # Get last 10 klines of BNBUSDT at 1h interval
-print(spot.klines("BNB-USDT", "1h", limit=10))
+print(spot.kline("BNB-USDT", "1h", limit=10))
 
 # API key/secret are required for trade endpoints
 spot = Spot(api_key='<api_key>', api_secret='<api_secret>')
