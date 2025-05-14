@@ -5,7 +5,6 @@ __pycache__/
 build/
 test.py
 install.py
-.gitignore
 # Environments
 .env
 .venv
