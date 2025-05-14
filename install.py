@@ -64,7 +64,7 @@ def install(install=True,upload=False, clean=True ,outdir = "dist"):
 
 if __name__ == "__main__":
     
-    install(upload=True)
+    install()
 
 
 
