@@ -26,7 +26,8 @@ share/python-wheels/
 *.egg
 MANIFEST
 test.py
-
+install.py
+.gitignore
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -52,7 +53,7 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
-
+Bixpy-docs/
 # Translations
 *.mo
 *.pot
