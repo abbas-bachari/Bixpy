@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='Bixpy',
-    version='1.0.2',
+    version='1.0.3',
     author='Abbas Bachari',
     author_email='abbas-bachari@hotmail.com',
     description="This is a lightweight library that works as a connector to BingX public API.",

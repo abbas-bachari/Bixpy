@@ -1,13 +1,3 @@
-from enum import Enum, auto
-import json
-
-class AutoName(Enum):
-    def _generate_next_value_(name, start, count, last_values):
-        return name
-
-
-
-
 class TransferType:
     FUNDING_TO_STANDARD                  = "FUND_SFUTURES"       # Funding Account -> Standard Contract
     STANDARD_TO_FUNDING                  = "SFUTURES_FUND"       # Standard Contract -> Funding Account

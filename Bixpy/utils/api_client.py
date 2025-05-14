@@ -11,13 +11,13 @@ from hashlib import sha256
 class ApiClient(object):
     
 
-    def __init__(self,api_key=None,api_secret=None,base_url=None,timeout=None,proxies=None):
+    def __init__(self,api_key=None,secret_key=None,base_url=None,timeout=None,proxies=None):
         
         
-        self.api_key = api_key
-        self.api_secret = api_secret
-        self.base_url = base_url 
-        self.timeout = timeout
+        self._api_key = api_key
+        self._secret_key = secret_key
+        self._base_url = base_url 
+        self._timeout = timeout
         headers={}
         headers["User-Agent"]      = "Bingx Python Sdk"
         headers["Content-Type"]    = "*/*"
@@ -30,11 +30,11 @@ class ApiClient(object):
 
         
         
-        self.session = requests.Session()
+        self._session = requests.Session()
 
-        self.session.headers.update(headers)
+        self._session.headers.update(headers)
 
-        self.session.proxies=proxies
+        self._session.proxies=proxies
         
         
         
@@ -56,14 +56,14 @@ class ApiClient(object):
         
         params_str =f"{params_str}&timestamp={get_timestamp()}" if params_str  else f"timestamp={get_timestamp()}"
         
-        signature   = hmac.new(self.api_secret.encode("utf-8"), params_str.encode("utf-8"), digestmod=sha256).hexdigest() if self.api_secret else ""
+        signature   = hmac.new(self._secret_key.encode("utf-8"), params_str.encode("utf-8"), digestmod=sha256).hexdigest() if self._secret_key else ""
         
-        url = "%s%s?%s&signature=%s" % (self.base_url, url_path, params_str,signature ) if signature else "%s%s?%s" % (self.base_url, url_path, params_str)
+        url = "%s%s?%s&signature=%s" % (self._base_url, url_path, params_str,signature ) if signature else "%s%s?%s" % (self._base_url, url_path, params_str)
         
         self._logger.debug("url: " + url)
 
         
-        response = self.session.request(method=http_method,url=url,timeout=self.timeout)
+        response = self._session.request(method=http_method,url=url,timeout=self._timeout)
         self._logger.debug("raw response from server:" + response.text)
         self._handle_exception(response)
 
