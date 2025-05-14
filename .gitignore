@@ -15,4 +15,3 @@ venv.bak/
 .pypirc
 docs/
 dist/
-.gitignore
